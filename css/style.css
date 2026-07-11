@@ -239,25 +239,34 @@ h1, h2, h3 {
   color: var(--color-cream);
   background: var(--color-charcoal);
   overflow: hidden;
+  /* height comes from hero-content below, not from the image, so long
+     text/buttons on narrow screens can never get clipped */
+  min-height: clamp(320px, 55vw, 560px);
+  display: flex;
+  align-items: stretch;
 }
 .hero-image {
-  width: 100%;
-  height: clamp(320px, 55vw, 560px);
-  object-fit: cover;
-  opacity: 0.55;
-}
-.hero-content {
   position: absolute;
   inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.55;
+  z-index: 0;
+}
+.hero-content {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   gap: 14px;
-  padding: 0 24px;
+  padding: 48px 24px;
   max-width: var(--max-width);
   margin: 0 auto;
-  right: 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 .hero-eyebrow {
   text-transform: uppercase;
