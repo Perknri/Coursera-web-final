@@ -288,7 +288,11 @@ h1, h2, h3 {
    Sections / cards (Upcoming shows + Shows grid)
    ========================================================= */
 .section {
-  padding: 56px 0;
+  /* padding-top/bottom only (not shorthand) so this never clobbers the
+     left/right padding that .container sets when both classes combine
+     on the same element */
+  padding-top: 56px;
+  padding-bottom: 56px;
 }
 .section-heading {
   display: flex;
