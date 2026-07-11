@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Teenager Theater — Shows</title>
+<meta name="description" content="Browse current and past Teenager Theater productions, with photos from the stage.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <nav class="nav container" aria-label="Main navigation">
+    <a href="index.html" class="logo">
+      <span class="logo-mark" aria-hidden="true">TT</span>
+      Teenager Theater
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle navigation menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-menu" id="primary-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shows.html" aria-current="page">Shows</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+  <section class="page-banner">
+    <div class="container">
+      <h1>Shows</h1>
+      <p>A look at what we've staged this season — swipe through photos from the run, then browse the full repertoire below.</p>
+    </div>
+  </section>
+
+  <section class="section container">
+    <div class="carousel" data-carousel tabindex="0" aria-roledescription="carousel" aria-label="Photos from recent productions">
+      <div class="carousel-track">
+        <div class="carousel-slide">
+          <img src="https://picsum.photos/seed/carousel1/1200/600" alt="Full cast bow at the end of Antigone, Rewired">
+          <p class="carousel-caption">Antigone, Rewired — closing night bow</p>
+        </div>
+        <div class="carousel-slide">
+          <img src="https://picsum.photos/seed/carousel2/1200/600" alt="Lead performers in The Paper Crown">
+          <p class="carousel-caption">The Paper Crown — Act II</p>
+        </div>
+        <div class="carousel-slide">
+          <img src="https://picsum.photos/seed/carousel3/1200/600" alt="Ensemble scene from Static Lines">
+          <p class="carousel-caption">Static Lines — ensemble devised scene</p>
+        </div>
+        <div class="carousel-slide">
+          <img src="https://picsum.photos/seed/carousel4/1200/600" alt="Backstage moment before curtain">
+          <p class="carousel-caption">Backstage, five minutes to curtain</p>
+        </div>
+      </div>
+      <button class="carousel-btn prev" type="button" aria-label="Previous photo">&#10094;</button>
+      <button class="carousel-btn next" type="button" aria-label="Next photo">&#10095;</button>
+      <div class="carousel-dots" role="group" aria-label="Choose photo"></div>
+    </div>
+    <p class="carousel-note">Use the arrows or dots to browse — this carousel does not auto-advance.</p>
+  </section>
+
+  <section class="section container">
+    <div class="section-heading">
+      <h2>Full repertoire</h2>
+      <p class="section-sub">Six productions from the current and past season</p>
+    </div>
+    <div class="card-grid">
+      <article class="card">
+        <img src="https://picsum.photos/seed/show1/500/350" alt="Cast rehearsing a scene from Antigone Rewired">
+        <div class="card-body">
+          <p class="card-meta">Sep 12 – Sep 21</p>
+          <h3>Antigone, Rewired</h3>
+          <p>A modern retelling of Sophocles' classic, set in a present-day high school.</p>
+        </div>
+      </article>
+      <article class="card">
+        <img src="https://picsum.photos/seed/show2/500/350" alt="Actors in costume for The Paper Crown">
+        <div class="card-body">
+          <p class="card-meta">Oct 3 – Oct 12</p>
+          <h3>The Paper Crown</h3>
+          <p>An original musical about friendship, ambition, and growing up too fast.</p>
+        </div>
+      </article>
+      <article class="card">
+        <img src="https://picsum.photos/seed/show3/500/350" alt="Ensemble cast on stage for Static Lines">
+        <div class="card-body">
+          <p class="card-meta">Nov 7 – Nov 16</p>
+          <h3>Static Lines</h3>
+          <p>A devised-theater piece exploring life online, written by our own ensemble.</p>
+        </div>
+      </article>
+      <article class="card">
+        <img src="https://picsum.photos/seed/show4/500/350" alt="Cast of Midsummer, Uptown in rehearsal">
+        <div class="card-body">
+          <p class="card-meta">Last season</p>
+          <h3>Midsummer, Uptown</h3>
+          <p>Shakespeare's comedy relocated to a city rooftop, with live music.</p>
+        </div>
+      </article>
+      <article class="card">
+        <img src="https://picsum.photos/seed/show5/500/350" alt="Two performers in a scene from Nine Letters">
+        <div class="card-body">
+          <p class="card-meta">Last season</p>
+          <h3>Nine Letters</h3>
+          <p>A quiet, two-hander drama about family and letters never sent.</p>
+        </div>
+      </article>
+      <article class="card">
+        <img src="https://picsum.photos/seed/show6/500/350" alt="Full cast of Loudmouth taking a bow">
+        <div class="card-body">
+          <p class="card-meta">Last season</p>
+          <h3>Loudmouth</h3>
+          <p>A comedy about a debate team with more heart than strategy.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>&copy; <span id="current-year">2026</span> Teenager Theater</p>
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shows.html">Shows</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <p class="footer-note">Built by students, for the stage. This footer stays put no matter how short the window gets.</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
